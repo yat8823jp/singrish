@@ -8,6 +8,7 @@
 import gulp from 'gulp';
 import debug from 'gulp-debug';
 import runSequence from 'run-sequence';
+import rev from 'gulp-rev';
 
 gulp.task('copy', function() {
 	return gulp.src(
@@ -32,6 +33,7 @@ gulp.task('copy', function() {
 			{ base: './' }
 		)
 		.pipe( debug() )
+		.pipe( rev() )
 		.pipe( gulp.dest( 'dist' ) );
 } );
 

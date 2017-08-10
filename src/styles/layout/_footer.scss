@@ -1,5 +1,6 @@
 .l-footer {
 	@include breakpoint( tablet ) {
+		padding: 18px 0 10px;
 	}
 	@include breakpoint( pc ) {
 	}
